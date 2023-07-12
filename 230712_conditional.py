@@ -24,3 +24,16 @@ if 90> score and score >= 80:   ## () 소괄호 생략가능
     print('B')
 if (80> score and score >= 70):
     print('C')
+
+
+X=50
+Y=10
+if(X>Y):
+    print('X is greater than B')
+elif(X==Y):
+    print('X is equal to Y')
+else:
+    print('Y is greater than X')
+
+
+
