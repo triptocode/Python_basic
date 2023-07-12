@@ -27,9 +27,9 @@
 # li[2]='문자'   # [99, [1, 2, 3], '문자', 4, 5, 6, 7, 8, 9]
 # print(li) 
 
-sli = "I'm studying list"
-print(sli[0:17:5]) # Itns   // index 0~ 17미만, 즉 인덱스 0~16까지, index0 데이터1개, 그후 5번째 간격으로 하나씩 출력
-print(sli[1:3])  # 'm   // index 1~ 3미만 = 즉, index 1,2 위치 value값들 2개:  'm 가 출력됨 
+# sli = "I'm studying list"
+# print(sli[0:17:5]) # Itns   // index 0~ 17미만, 즉 인덱스 0~16까지, index0 데이터1개, 그후 5번째 간격으로 하나씩 출력
+# print(sli[1:3])  # 'm   // index 1~ 3미만 = 즉, index 1,2 위치 value값들 2개:  'm 가 출력됨 
 
 #################################  dictionary - 군집자료형 ##############################
 #  dict 형태- {키1:값1, 키2:값2...}  // 딕셔너리는 json이랑 비슷해서 활용가능
@@ -85,3 +85,26 @@ print(sli[1:3])  # 'm   // index 1~ 3미만 = 즉, index 1,2 위치 value값들 
 # #s.update(5) #는 오류
 # s.update([5])
 # print(s)  # {5, '나', '가', '다'}
+
+
+############# python - 40 page < handle values with tuple and list > 
+T = (1,2,3,4,5,6,7,8)
+
+updateList = list(T) # Q1)  value 1 --> value 0
+updateList[0] = 0
+T = tuple(updateList)
+print(T) # (0, 2, 3, 4, 5, 6, 7, 8)
+
+addList = list(T) # Q2) add value 9
+addList.append(9) # append(value) : list 에서 맨뒤에 값 추가됨
+T = tuple(addList)
+print(T) # (0, 2, 3, 4, 5, 6, 7, 8, 9)
+
+deleteList = list(T) # Q1) remove value 8 
+deleteList.remove(8)
+T = tuple(deleteList)
+print(T) # (0, 2, 3, 4, 5, 6, 7, 9)
+
+
+
+
