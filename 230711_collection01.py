@@ -87,7 +87,8 @@
 # print(s)  # {5, '나', '가', '다'}
 
 
-############# python - 40 page < handle values with tuple and list > 
+############# python - 40 page < handle values By converting tuple into a list > 
+# reminder : Tuples are unchangeable !! so use a list !!
 T = (1,2,3,4,5,6,7,8)
 
 updateList = list(T) # Q1)  value 1 --> value 0
