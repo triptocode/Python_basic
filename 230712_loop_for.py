@@ -1,4 +1,7 @@
-# for문에 반복가능한 객체들: str, tuple, list, set , dict, range()
+# for 아이템 in 반복가능한 객체들 (=Iterable): str, tuple, list, set , dict, range()
+
+# for 아이템 in 반복가능한 객체들:
+#     실행코드
 
 # for i in range(1,10,2):  # range(1이상, 10미만, 2씩 step 간격으로 )
 #     #print(i, end=',') # 1,3,5,7,9,  // 출력 끝에 연결해서 찍음(옆으로 출력)
