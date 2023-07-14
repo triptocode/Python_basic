@@ -1,4 +1,16 @@
-# Python String split
+#############  (1) Python String slicing   #############
+
+# string[start:end:step]
+
+my_str = "This is a substring tutorial"
+result1 = my_str[0:4]                  # 문자열 앞에서 원하는 갯수만큼 자를때 string[0:len]
+print(result1) # This
+
+result2 = my_str[:7]                  # 0은 생략가능 string[:len]                                      
+print(result2) # This is
+
+
+#############  (2) Python String split    #############
 
 # string.split(separator, maxsplit) 
 # separator: optional. default -1, which is "all occurences"
