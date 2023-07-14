@@ -5,7 +5,6 @@
 # print(b)
 # print(c)
 
-
 # c=12345
 # print(type(c))
 # print(str(c))
