@@ -68,3 +68,62 @@ import time
 for i in range(1,10):
     print(i)
     time.sleep(1)
+
+
+
+
+########################################################################################3
+########### 시간내 단어 입력하는 프로그램 ##################
+
+# import time
+
+# word ='cookie'
+# start_time =time.time()
+# answer = input('type "cookie: ')
+# end_time = time.time() #입력완료 시간을 끝시간으로 세팅
+# if word ==answer and (end_time-start_time) <5:
+#     print('correct!')
+# else:
+#     print('wrong')
+
+
+########################################   random   ########################################
+
+import random
+
+# words = ['a', 'b', 'c', 'd']
+# print(random.choice(words)) 
+# print(random.choice(words)) 
+# print(random.choice(words)) 
+# print(random.choice(words)) 
+
+# # d
+# # a
+# # c
+# # b
+
+
+# a = range(1,10) # 1~ 9 까지 랜덤한 수 출력 
+# print(random.choice(a))
+# print(random.choice(a))
+# print(random.choice(a))
+# print(random.choice(a))
+
+# # 5
+# # 3
+# # 8
+# # 3
+
+colors = ['red', 'blue', 'green']
+print(colors[0])
+
+print(random.random())      # 0~1 사이 숫자가 랜덤하게 출력 (ex 0.520812219719507 )
+
+words2 = ['cookie', 'pear', 'walnut']
+print(int(random.random()*3))          # int 로  소수점 없에고 정수화
+print(words2[int(random.random()*3)])
+
+
+
+words2 = ['cookie', 'pear', 'walnut','blueberr','melon']
+print(words2[int(random.random()*5)]) # index 0~ 4 까지 (5*0.9= 4.5 인데 정수부분만 생각해서 4)
