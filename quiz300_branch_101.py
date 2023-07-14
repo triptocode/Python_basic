@@ -39,7 +39,7 @@ print(5)  # 3과 5가 한줄에 하나씩 출력
 
 
 
-#127
+#127 
 
 resident_full_num= input("주민번호: ")
 second_num = resident_full_num.split('-')[1]
@@ -58,3 +58,10 @@ else: print("false numbers! Try to type precise resident numbers!! ")
 # elif second_num[0]==2 or second_num[0]==4:
 #     print("female")                                                   # input: 901010-235211  
 # else: print("false numbers! Try to type precise resident numbers!! ") #false numbers! Try to type precise resident numbers!! 
+
+
+
+#############  (1) Python String slicing   #############
+
+# string[start:end:step]
+# string[index (start) : index (end-1)]
