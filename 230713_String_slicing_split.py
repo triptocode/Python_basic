@@ -9,7 +9,6 @@ print(result1) # This
 result2 = my_str[:7]                  # 0은 생략가능 string[:len]                                      
 print(result2) # This is
 
-
 #############  (2) Python String split    #############
 
 # string.split(separator, maxsplit) 
@@ -20,7 +19,6 @@ print(result2) # This is
 txt = "Welcome to Korea"
 result = txt.split()
 print(result) # ['Welcome', 'to', 'Korea']
-
 
 txt2 = "studying String split, loop for, conditional if."
 result2 = txt2.split(",")

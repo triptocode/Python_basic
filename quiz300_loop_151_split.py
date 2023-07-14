@@ -5,3 +5,5 @@ for file in fileList:
  spl= file.split(".")
  if(spl[1]=="h") or(spl[1]=="c"):
      print(file)
+
+    
