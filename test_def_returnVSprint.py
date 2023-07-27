@@ -34,3 +34,5 @@ def sum_all(*numbers):
 
 print(sum_all(1, 2)) #
 print(sum_all(1, 2, 3, )) #
+
+
