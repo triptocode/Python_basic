@@ -109,7 +109,8 @@
 # b = 5
 # b **= 3 #  b= b**3
 # print(b) #125
-# #divmod()함수
+
+#divmod()함수
 # print(divmod(5,3)) #5를 3으로 나누어라 결과갑: (1, 2) 몫은 1, 나머지
 # #pow()함수 : 제곱근
 # print(pow(5,3)) #5의 3승 125
@@ -326,17 +327,17 @@
 
 # print(a) 
 
-# #미션: 리스트에 중복을 제거
-# a=[0,1,1,1,2,3,4,2,2,3,4,5,6,7,8,0,0,2]
-# a.sort()
+#미션: 리스트에 중복을 제거
+a=[0,1,1,1,2,3,4,2,2,3,4,5,6,7,8,0,0,2]
+a.sort() # [0, 0, 0, 1, 1, 1, 2, 2, 2, 2, 3, 3, 4, 4, 5, 6, 7, 8]
+print(a)
+# print(list(set(a))) #리스트타입의 중복은 set()함수를 이용하여 제거
 # print(a)
-# # print(list(set(a))) #리스트타입의 중복은 set()함수를 이용하여 제거
-# # print(a)
-# print(type(a))
-# a = set(a)
-# print(a)
-# a = list(a)
-# print(a)
+print(type(a)) 
+a = set(a) # {0, 1, 2, 3, 4, 5, 6, 7, 8}
+print(a)
+a = list(a) # {0, 1, 2, 3, 4, 5, 6, 7, 8}
+print(a)
 
 
 # s = "hello"
@@ -1206,7 +1207,7 @@
 # print("자동차1의 색상은 %s이며, 현재속도는 %dkm입니다." % (myCar1.color, myCar1.speed))
 # print("자동차1의 색상은 %s이며, 현재속도는 %dkm입니다." % (myCar1.color, myCar2.speed))
 
-######매개변수가 있는 생성자메서드 #################
+# #####매개변수가 있는 생성자메서드 #################
 # class Car:
 #     color = ""      # 인스턴스변수, 각각의
 #     speed = 0       # 인스턴스변수
@@ -1329,27 +1330,27 @@
 # del(myLine1)  # __del__()
 
 
-############# 추상 메서드 #############
-#빈껍질 메서드
+# ############# 추상 메서드 #############
+# #빈껍질 메서드
 
-###클래스 선언부분
-class SuperClass:
-    def method(self):
-        pass #추상 메서드
+# ###클래스 선언부분
+# class SuperClass:
+#     def method(self):
+#         pass #추상 메서드
 
-class subClass1(SuperClass):
-    def method(self):  #메서드 오버라이딩
-        print('SubClass1에서 method()를 오버라이딩 함')
+# class subClass1(SuperClass):
+#     def method(self):  #메서드 오버라이딩
+#         print('SubClass1에서 method()를 오버라이딩 함')
 
-class subClass2(SuperClass):
-    pass  #향후 심각한 오류발생 가능성 있음.--> 오버라이딩 필요!
+# class subClass2(SuperClass):
+#     pass  #향후 심각한 오류발생 가능성 있음.--> 오버라이딩 필요!
 
-### 메인 코드 부분 ###
-sub1 = subClass1()      #인스턴스 생성
-sub2 = subClass2()
+# ### 메인 코드 부분 ###
+# sub1 = subClass1()      #인스턴스 생성
+# sub2 = subClass2()
 
-sub1.method()   #SubClass1에서 method()를 오버라이딩 함
-sub2.method()   #메서드 오버라이딩이 안되었으므로 아무것도 출력안됨.
+# sub1.method()   #SubClass1에서 method()를 오버라이딩 함
+# sub2.method()   #메서드 오버라이딩이 안되었으므로 아무것도 출력안됨.
 
 
 ########
